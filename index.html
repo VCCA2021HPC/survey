@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Post Course Survey</title>
+  </head>
+
+<h1>Post Course Survey</h1>
+<p>Please answer these questions to help us improve the materials and delivery. Responses are annonymous. All fields are optional.</p> 
+<form action="https://formcarry.com/s/6sPAxIT9Cyp" method="POST" accept-charset="UTF-8" >
+  
+<label for="reason">Why did you take this course?</label><br>
+  <textarea id="reason" name="reason" rows="3" cols="50" value=""></textarea><br>
+<label for="total_time">Total time you needed to use for this course?</label><br>
+<select id="total_time" name="total_time">
+<option>less than 10 hours</option>
+<option>10-20 hours</option>
+<option>20-40 hours</option>
+<option>40-60 hours</option>
+<option>more than 60 hours</option>
+</select>
+<br>
+<label for="linux_before">What level of comfort with linux command line did you have before the course began (1 none, 5 expert)</label><br>
+<select id="linux_before" name="linux_before">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+<br>
+<label for="linux_after">What level of comfort with linux command line did you have after the course ended (1 none, 5 expert)</label><br>
+<select id="linux_after" name="linux_after">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+<br>
+
+<label for="programming_languages">Indicate programming languages you are comfortable with:</label></br>
+<input type="checkbox" id="programming_language_C" 
+		       name="programming_language_C" 
+		       value="C">
+<label for="programming_language_C">C</label>
+<input type="checkbox" id="programming_language_C++" 
+		       name="programming_language_C++" 
+		       value="C++">
+<label for="programming_language_C++">C++</label>
+<input type="checkbox" id="programming_language_C#" 
+		       name="programming_language_C#" 
+		       value="C#">
+<label for="programming_language_C#">C#</label>
+<input type="checkbox" id="programming_language_Fortran" 
+		       name="programming_language_Fortran" 
+		       value="Fortran">
+<label for="programming_language_Fortran">Fortran</label>
+<input type="checkbox" id="programming_language_Java" 
+		       name="programming_language_Java" 
+		       value="Java">
+<label for="programming_language_Java">Java</label>
+<input type="checkbox" id="programming_language_Javascript" 
+		       name="programming_language_Javascript" 
+		       value="Javascript">
+<label for="programming_language_Javascript">Javascript</label>
+<input type="checkbox" id="programming_language_Kotlin" 
+		       name="programming_language_Kotlin" 
+		       value="Kotlin">
+<label for="programming_language_Kotlin">Kotlin</label>
+<input type="checkbox" id="programming_language_R" 
+		       name="programming_language_R" 
+		       value="R">
+<label for="programming_language_R">R</label>
+<input type="checkbox" id="programming_language_Ruby" 
+		       name="programming_language_Ruby" 
+		       value="Ruby">
+<label for="programming_language_Ruby">Ruby</label>
+<input type="checkbox" id="programming_language_Other"
+		       name="programming_language_Other"
+		       value="Other"
+		       onclick="displayother()">
+<label for="programming_language_Other">Other</label><br>
+<label for="programming_language_Other_specify" 
+       id ="programming_language_Other_specify_label"
+       style="display:none">Please specify other programming languages:</label><br>
+<input type="text" id="programming_language_Other_specify"
+		   name="programming_language_Other_specify"
+		   value=""
+		   style="display:none">
+<br>
+
+<label for="contact">Would you like to keep in touch with course participants? If so, how (email list, forum, discord etc)?</label><br>
+  <textarea id="contact" name="contact" rows="1" cols="50" value=""></textarea><br>
+<label for="useful">Most useful thing you learned in this course?</label><br>
+  <textarea id="useful" name="useful" rows="1" cols="50" value=""></textarea><br>
+<label for="dislike">Which part of this course did you dislike?</label><br>
+  <textarea id="dislike" name="dislike" rows="1" cols="50" value=""></textarea><br>
+<label for="time_consuming">Most time consuming aspect of this course?</label><br>
+  <textarea id="time_consuming" name="time_consuming" rows="1" cols="50" value=""></textarea><br>
+<label for="gpus">Do you expect to use GPUs? If so, what do you think if SYCL and the GPU material?</label><br>
+  <textarea id="gpus" name="gpus" rows="1" cols="50" value=""></textarea><br>
+<label for="online_benefits">Benefits of online format?</label><br>
+  <textarea id="online_benefits" name="online_benefits" rows="1" cols="50" value=""></textarea><br>
+<label for="online_drawbacks">Drawbacks of online format?</label><br>
+  <textarea id="online_drawbacks" name="online_drawbacks" rows="1" cols="50" value=""></textarea><br>
+<label for="applicable">Anything you learned in this course that is immediately applicable?</label><br>
+  <textarea id="applicable" name="applicable" rows="1" cols="50" value=""></textarea><br>
+<label for="tools">Do you have interest in creating new software tools or learning how to use existing tools?</label><br>
+  <textarea id="tools" name="tools" rows="1" cols="50" value=""></textarea><br>
+<label for="helpful">Has/will this course help you in future? If so how?</label><br>
+  <textarea id="helpful" name="helpful" rows="1" cols="50" value=""></textarea><br>
+ <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+<script>
+  function displayother() {
+    var checkother = document.getElementById("programming_language_Other");
+    var displaylabel = document.getElementById("programming_language_Other_specify_label");
+    var displayinput = document.getElementById("programming_language_Other_specify");
+    if (checkother.checked == true){
+      displaylabel.style.display = "block";
+      displayinput.style.display = "block";
+    } else {
+      displaylabel.style.display = "none";
+      displayinput.style.display = "none";
+    }
+}
+</script>
+</html>
